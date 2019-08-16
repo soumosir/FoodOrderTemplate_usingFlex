@@ -1,0 +1,26 @@
+# FoodOrderTemplate_usingFlex
+
+A simple example to create a food order template using flex box:
+
+The food container is a flex: #foodblock
+
+    within that; there are two components : 1: image container    #foodimage
+                                            2: Text container     #content
+                                                    inside content; there are two container
+                                                    2.a Name and price of food      #nameprice
+                                                            2.a.1 - first div - name
+                                                            2.a.2 - seconf div - price
+                                                    2.b desciprion and add button   #desnadd
+                                                            2.b.1 - first div - desciprion
+                                                            2.b.2 - second div - button
+
+
+Now the flex magic:
+
+    | foodblock   -   display: flex                                                             |
+    | foodimage    |   content : flex-grow: 8                                                   |
+    |              |    nameprice:display: flex; justify-content: space-between;                |
+    |              |    descadd  :display: flex; justify-content: space-between;                |    
+
+where flex is applied: its effect is in chold block"
+        by default:  div block property is removed and they become inline like in nameprice div : child-div name and price acts as flex box components: 
